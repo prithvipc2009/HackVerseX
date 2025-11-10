@@ -1,0 +1,56 @@
+body {
+  background: #0d0b0bf7;
+}
+
+/* Welcome animation */
+.welcome {
+  color: #94f28a;
+  top: 40%;
+  left: 35%;
+  position: absolute;
+  animation: welcome 2s forwards; /* 2s duration, once */
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00
+}
+
+@keyframes welcome {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* HackVerseX animation */
+.enter {
+  border-radius:20px;
+  background-color: #000;
+  color: #00ff00;
+  font-size: 20px;
+  top: 50%;
+  left: 40%;
+  position: absolute;
+  opacity: 0; /* Start invisible */
+  animation-name: HackVerseX;
+  animation-duration: 2s;
+  animation-delay: 2s; /* Wait for Welcome animation to finish */
+  animation-fill-mode: forwards;
+  box-shadow: 0 0 10px #00ff00, 0 0 15px skyblue;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00
+   
+}
+.HackVerseX {
+  color: #00ff00;
+  top: 40%;
+  left: 30%;
+  position: absolute;
+  opacity: 0; /* Start invisible */
+  animation-name: HackVerseX;
+  animation-duration: 2s;
+  animation-delay: 2s; /* Wait for Welcome animation to finish */
+  animation-fill-mode: forwards;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00
+}
+
+@keyframes HackVerseX {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
